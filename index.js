@@ -3,8 +3,11 @@ const renderApi = require('@api/render-api');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+require('dotenv').config();
 
-const API_KEY = 'rnd_LZJ5SwYWHxMchWAUjrGb1ZsDljyE';
+const API_KEY = process.env.API_KEY;
+
+//const API_KEY = 'rnd_LZJ5SwYWHxMchWAUjrGb1ZsDljyE';
 
 app.get("/apps", async (req, res) => {
     try {

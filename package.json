@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@api/render-api": "file:.api/apis/render-api",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
   }
 }
