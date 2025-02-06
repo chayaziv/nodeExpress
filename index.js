@@ -9,7 +9,7 @@ const API_KEY = process.env.API_KEY;
 
 //const API_KEY = 'rnd_LZJ5SwYWHxMchWAUjrGb1ZsDljyE';
 
-app.get("/apps", async (req, res) => {
+app.get("/", async (req, res) => {
     try {
         renderApi.auth(API_KEY);
         const response = await renderApi.listServices({ includePreviews: 'true', limit: '20' });
